@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Disappearing Santa">
+        <meta charset="UTF-8">
+        <title>Disappearing Santa</title>
+        <link rel="stylesheet" href="Disappearing_Santa_Style.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).on('click', 'img', function(){
+
+                $('img').click(function(){
+                $(this).hide();
+                // $('img').hide();
+
+                $('button').click(function(){
+                $("img").show();
+                })
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Oh, No!! Global Warming!! Santa is Disappearing!</h1>
+            <h3>Click on Santa to watch him disappear.</h3>
+            <div class="row1">
+                <img src="image1.jpg" alt="Santa">
+                <img src="image1.jpg" alt="Santa">
+                <img src="image1.jpg" alt="Santa">
+                <img src="image1.jpg" alt="Santa">
+            </div>
+            <div class="row2">
+                <img src="image1.jpg" alt="Santa">
+                <img src="image1.jpg" alt="Santa">
+                <img src="image1.jpg" alt="Santa">
+                <img src="image1.jpg" alt="Santa">
+            </div>
+            <button>Restore</button>
+        </div>
+    </body>
+</html>
